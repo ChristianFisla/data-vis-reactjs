@@ -1,7 +1,6 @@
 import './App.css';
 import * as d3 from "d3"
 import React, { useEffect, useRef, useState } from 'react';
-import backgroundPhoto from "./itmatter.png"
 
 const data = [
   {id: "Trump", value: 6200},
@@ -128,19 +127,21 @@ function MainText() {
   useEffect(() => {
 
     setInterval(() => {
-    setCount(prev => prev + Math.floor(Math.random() * 17))
+    setCount(prev => prev + Math.floor(Math.random() * 4))
 
-    }, 500)
+    }, 100)
   }, [])
 
   return (
     <>
-      <h1 className="Header" id="number-sites" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-      {count.toLocaleString()} 
-      </h1>
-      <h1 className="Header" id="sites-crawled">sites crawled</h1>
-      <h2 className="Header" id="learn-more">LEARN MORE</h2>
-      <div id="main-subtext" data-aos="fade-left" data-aos-duration="1000">
+      <div id="main-text">
+        <h1 className="Header" id="number-sites">
+        {count.toLocaleString()} 
+        </h1>
+        <h1 className="Header" id="sites-crawled">sites crawled</h1>
+        <button id="learn-more">LEARN MORE</button>
+      </div>
+      <div id="main-subtext" data-aos="fade-left" data-aos-duration="1500">
         <h1 className="Header" id="question">What problem are we solving?</h1>
         <p className="pText" id="intro-p">
         Enable end-users to provide online sources and have them crawled unfiltered, analyzed, and provided with insights about people, places, events, factual claims and other trends over time.
