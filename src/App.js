@@ -1,6 +1,7 @@
 import './App.css';
 import * as d3 from "d3"
 import React, { useEffect, useRef, useState } from 'react';
+import backgroundPhoto from "./itmatter.png"
 
 const data = [
   {id: "Trump", value: 6200},
@@ -138,6 +139,14 @@ function MainText() {
       {count.toLocaleString()} 
       </h1>
       <h1 className="Header" id="sites-crawled">sites crawled</h1>
+      <h2 className="Header" id="learn-more">LEARN MORE</h2>
+      <div id="main-subtext" data-aos="fade-left" data-aos-duration="1000">
+        <h1 className="Header" id="question">What problem are we solving?</h1>
+        <p className="pText" id="intro-p">
+        Enable end-users to provide online sources and have them crawled unfiltered, analyzed, and provided with insights about people, places, events, factual claims and other trends over time.
+        Enable comparative & unfiltered analysis across sources, across time, and against specified sets of baseline facts.
+        </p>
+      </div>
     </>
   )
 
@@ -148,7 +157,7 @@ function App() {
   return (
     <div className="App">
       <div id="header-container">
-        <h1 className="Header">itmatter.com</h1>
+        <h1 className="Header">ITMATTER INC</h1>
         <h2 className="Header" id="dashboard">Dashboard</h2>
         <h2 className="Header" id="register">Register</h2>
         <SignIn />
