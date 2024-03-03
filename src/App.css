@@ -1,9 +1,9 @@
 html {
   height: 200vh;
+  background-color: #242582;
 }
 
 .App {
-  background-color: #242582;
   position: absolute;
   width:100%;
   height:100%;
@@ -28,7 +28,7 @@ html {
   font-weight: 700;
 }
 
-#import {
+#upload {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,11 +42,11 @@ html {
   font-weight: 700;
   width: 10%;
   height: 35%;
-  margin-left: auto;
+  margin-left: 1.5%;
   margin-right: 5%;
 }
 
-#import:hover {
+#upload:hover {
   background-color: #d25386;
 }
 
@@ -57,10 +57,29 @@ html {
   }
 }
 
+#dashboard {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  margin-right: 1.5%;
+  font-size: 1.18rem;
+}
+
+#dashboard:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #background-split {
+  position: absolute;
   transform: skewY(-3deg);
   background-color: #2F2FA2;
-  margin-top: 30%;
+  z-index: 1;
+  top: 90vh;
   width: 100%;
-  height: 100%;
+  height: 150vh;
+}
+
+#init-bubble-chart {
+  padding-left: 8%;
 }
