@@ -17,6 +17,7 @@ html {
   height: 12%;
   display: flex;
   align-items: center;
+  position: fixed;
 }
 
 .Header {
@@ -28,7 +29,7 @@ html {
   font-weight: 700;
 }
 
-#upload {
+#sign-in {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +47,7 @@ html {
   margin-right: 5%;
 }
 
-#upload:hover {
+#sign-in:hover {
   background-color: #d25386;
 }
 
@@ -70,6 +71,20 @@ html {
   cursor: pointer;
 }
 
+#register {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  font-size: 1.18rem;
+}
+
+#register:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #background-split {
   position: absolute;
   transform: skewY(-3deg);
@@ -82,4 +97,21 @@ html {
 
 #init-bubble-chart {
   padding-left: 8%;
+  padding-top: 4%;
+  overflow: visible;
+}
+
+#number-sites {
+  position: absolute;
+  font-family: "Roboto Mono", monospace;
+  font-size: 7em;
+  right: 11%;
+  top: 20%;
+}
+
+#sites-crawled {
+  position: absolute;
+  font-size: 2.3em;
+  right: 11%;
+  top: 45%;
 }
