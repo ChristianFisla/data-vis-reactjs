@@ -1,6 +1,5 @@
 html {
-  height: 200vh;
-  background-color: #242582;
+  background-color: #383a96;
 }
 
 .App {
@@ -18,7 +17,7 @@ html {
   display: flex;
   align-items: center;
   position: fixed;
-  background-color: #242582;
+  background-color: #383a96;
   z-index: 10;
 }
 
@@ -35,7 +34,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F64C72;
+  background-color: #e85675;
   border: 1px solid transparent;
   border-radius: .75rem;
   color: #FFFFFF;
@@ -90,11 +89,11 @@ html {
 #background-split {
   position: absolute;
   transform: skewY(-3deg);
-  background-color: #2F2FA2;
+  background-color: #4848b1;
   z-index: 1;
   top: 90vh;
   width: 100%;
-  height: 150vh;
+  height: 80vh;
 }
 
 #init-bubble-chart {
@@ -204,4 +203,42 @@ html {
 #intro-p {
   position: absolute;
   font-size: 1em;
+}
+
+#multiline {
+  position: absolute;
+  right: 3%;
+  top: 15%;
+  transform: skewY(3deg);
+}
+
+#secondary-info {
+  transform: skewY(3deg);
+  width: 33%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#insights-header {
+  order: 0;
+  align-items: flex-end;
+  position: absolute;
+  margin: 0;
+  top: 19%;
+  left: 9%;
+  padding-top: 12%;
+}
+
+#list-insights {
+  order: 1;
+  align-items: flex-end;
+  position: absolute;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  padding-top: 34%;
+  left: 7%;
 }
